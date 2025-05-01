@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Header */
+header {
+  display: flex;
+  height: 90px;
+  background-color: #0b0b5a;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 5px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 75px;
+  width: 175px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.01);
+}
+
+.login {
+  background-color: transparent;
+  color: #ff8f00;
+  border: 1px solid #ff8f00;
+  padding: 10px 60px;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.login:hover {
+  border: 1px solid #fff;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Main Section */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/bg.png);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  gap: 40px;
+}
+
+.forms {
+  background-color: #0b0b5a;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.title h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+.title h3 {
+  font-size: 2rem;
+  color: #ff8f00;
+}
+
+.title p {
+  color: #f5f7fa;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #333;
+}
+
+.signup {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff8f00;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+hr {
+  width: 100%;
+  border: 0.5px solid #f5f7fa;
+  margin: 20px 0;
+}
+
+.account p {
+  color: #ff8f00;
+  font-size: 0.9rem;
+}
+
+#reg {
+  color: #f5f7fa;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+#reg:hover {
+  color: #ddd;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  width: 100%;
+  background-color: #0b0b5a;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.copyright {
+  font-size: xx-small;
+  color: #ff8f00;
+}
+.icons a {
+  margin: 0 5px;
+  color: #ff8f00;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .forms {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px 20px;
+  }
+
+  .navigation {
+    gap: 10px;
+  }
+
+  .main {
+    padding: 10px;
+  }
+
+  .forms {
+    padding: 20px;
+  }
+
+  .title h2 {
+    font-size: 1.5rem;
+  }
+
+  .title p {
+    font-size: 0.9rem;
+  }
+
+  input {
+    padding: 10px;
+  }
+
+  .signup {
+    padding: 10px;
+  }
+}

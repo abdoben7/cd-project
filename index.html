@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Dirassa+</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <a href="index.html"><img class="logo" src="./images/logo.png" /></a>
+      </div>
+      <nav>
+        <ul class="slidebar">
+          <li onclick="hideSidebar()">
+            <a><i class="fa-solid fa-x bar-menu-x"></i></a>
+          </li>
+          <li><a href="#about" class="About">About</a></li>
+          <li><a href="#contact" class="Contact">Contact Us </a></li>
+          <li><button class="login">Log In</button></li>
+        </ul>
+        <ul class="navigation">
+          <li><a href="#about" class="About">About</a></li>
+          <li><a href="#contact" class="Contact">Contact Us </a></li>
+          <li><button class="login">Log In</button></li>
+        </ul>
+        <a onclick="showSidebar()"><i class="fa-solid fa-bars bar-menu"></i></a>
+      </nav>
+    </header>
+
+    <!-- maim -->
+    <main>
+      <div class="wlc">
+        <p>Welcome to Dirassa+</p>
+        <p class="yr">Your Study Partner</p>
+      </div>
+      <div class="statut" id="statut">
+        <div class="statut-info">
+          <h2>Select your statut</h2>
+        </div>
+        <div class="select-info">
+          <div class="statut1">
+            <img src="./images/graduated.png" />
+            <p>Student/Parent</p>
+          </div>
+          <div class="statut2">
+            <img src="./images/professor.png" alt="" />
+            <p>Professor</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <button class="btn-scroll"><i class="fa-solid fa-arrow-up"></i></button>
+    <!-- access -->
+
+    <section class="access" id="access">
+      <div class="cadre">
+        <div class="how">
+          <p>How to access to Dirassa+</p>
+        </div>
+        <div class="vid">
+          <img src="./images/youtube.png" />
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section id="about">
+      <div class="about-content">
+        <div class="about-title">
+          <h2>About</h2>
+        </div>
+        <div class="about-info">
+          <div class="about-para">
+            <p>
+              <b>Dirassa+</b> is a modern web platform that has been supporting
+              young Moroccan students in their studies since 2025.With features
+              like course materials, grade tracking, and personalized tools,
+              Dirassa+ helps students stay organized, motivated, and on the path
+              to success.
+            </p>
+          </div>
+          <div class="statique">
+            <div class="statique-a">
+              <h3>256937</h3>
+              <p>Active Moroccan students accessing to our plateform</p>
+            </div>
+            <div class="statique-b">
+              <h3>985</h3>
+              <p>Online courses and materials made for you</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact">
+      <div class="contact">
+        <div class="contact-title">
+          <h2>Contact Us</h2>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-form">
+            <form>
+              <input type="text" placeholder="Email" />
+              <input type="text" placeholder="First Name" />
+              <input type="text" placeholder="Last Name" />
+              <textarea placeholder="Message"></textarea>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+          <div class="contact-photo">
+            <img src="./images/avatar.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="icons">
+        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        <a href="#"><i class="fa-solid fa-phone"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+      </div>
+      <div class="copyright">
+        <p>
+          Designed and Developed by AE-YB-AB © 2025 <b>Dirassa+</b>. All Rights
+          Reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
