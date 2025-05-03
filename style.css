@@ -233,6 +233,12 @@ main {
   z-index: 1;
 }
 
+
+.btn-scroll:hover {
+  background-color: #ff9800; 
+  transform: translateY(-3px); 
+}
+
 /* access */
 
 .access {
