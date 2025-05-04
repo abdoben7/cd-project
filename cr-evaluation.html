@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dirassa - Create Evaluation</title>
+    <link rel="stylesheet" href="cr-evaluation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="logo">
+          <img src="./images/logo.png" />
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#">Dashboard</a>
+          </li>
+          <li><a href="#">Student space</a></li>
+          <li>
+            <a id="user">User</a>
+            <ul id="dropdown" class="drop-down hidden">
+              <li>
+                <i class="fa-solid fa-arrow-right-from-bracket out"></i
+                ><a href="#">log out</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main -->
+    <main>
+      <h1 class="page-title">Create Evaluation</h1>
+
+      <form class="create-form">
+        <div class="form-group">
+          <label for="title">Evaluation Title:</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter evaluation title"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description:</label>
+          <textarea
+            id="description"
+            class="form-control"
+            rows="4"
+            placeholder="Enter evaluation description"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Evaluation Date:</label>
+          <input type="date" id="date" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+          <label for="coefficient">Coefficient:</label>
+          <input type="number" id="coefficient" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="type">Evaluation Type:</label>
+          <select id="type" class="form-control">
+            <option value="assignment">Assignment</option>
+            <option value="practical">Homework</option>
+            <option value="oral">Oral</option>
+            <option value="practical">Practical Work</option>
+            <option value="project">Project</option>
+            <option value="practical">Exam</option>
+            <option value="project">Test</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="period">Period:</label>
+          <select id="period" class="form-control">
+            <option value="1st">1st Semester</option>
+            <option value="2nd">2nd Semester</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject:</label>
+          <select id="subject" class="form-control">
+            <option value="math">Mathematics</option>
+            <option value="physics">Physics</option>
+            <option value="chemistry">Chemistry</option>
+            <option value="biology">Biology</option>
+            <option value="literature">Philosophie</option>
+            <option value="history">History</option>
+            <option value="history">Arabe</option>
+            <option value="history">French</option>
+            <option value="history">English</option>
+          </select>
+        </div>
+
+        <div class="form-actions">
+          <button
+            onclick="document.location='evaluation.html'"
+            type="button"
+            class="btn btn-cancel"
+          >
+            <i class="fa-solid fa-xmark"></i> Cancel
+          </button>
+          <button
+            onclick="document.location='evaluation.html'"
+            type="submit"
+            class="btn btn-save"
+          >
+            <i class="fa-solid fa-floppy-disk"></i> Save
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="icons">
+        <a href="#" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="#" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+        <a href="#" aria-label="LinkedIn"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="#" aria-label="Instagram"
+          ><i class="fa-brands fa-square-instagram"></i
+        ></a>
+      </div>
+      <div class="copyright">
+        <p>
+          Designed and Developed by AE-YB-AB © 2025 <b>Dirassa+</b>. All Rights
+          Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const user = document.getElementById("user");
+      const drop = document.getElementById("dropdown");
+
+      user.addEventListener("click", function () {
+        drop.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dashbord.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Dirassa - Dashboard</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav class="nav">
+        <div class="logo">
+          <img src="./images/logo.png" />
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#">Dashboard</a>
+          </li>
+          <li><a href="#">Student space</a></li>
+          <li>
+            <a id="user">User</a>
+            <ul id="dropdown" class="drop-down hidden">
+              <li>
+                <i class="fa-solid fa-arrow-right-from-bracket out"></i
+                ><a href="#">log out</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main -->
+    <main>
+      <div class="welcome-section">
+        <h1>
+          Welcome to <span>Dirassa+</span>, <span id="userName">Teacher</span>!
+        </h1>
+        <p>
+          You are connected as a teacher. You can access all your functions
+          here.
+        </p>
+      </div>
+
+      <div class="dashboard">
+        <div class="action">
+          <div class="card" id="card1">
+            <h2 class="card-title">Evaluations Created</h2>
+            <ul class="evaluations-list">
+              <li class="evaluation-item">
+                <div class="evaluation-title">
+                  <i class="fas fa-file-alt"></i>
+                  <span>Exercice 1 TD mécanique du point</span>
+                </div>
+                <div class="evaluation-date">25/3/2025</div>
+              </li>
+              <li class="evaluation-item">
+                <div class="evaluation-title">
+                  <i class="fas fa-file-alt"></i>
+                  <span>Rotation et Travail</span>
+                </div>
+                <div class="evaluation-date">18/4/2025</div>
+              </li>
+              <li class="evaluation-item">
+                <div class="evaluation-title">
+                  <i class="fas fa-file-alt"></i>
+                  <span>Mécanique du point</span>
+                </div>
+                <div class="evaluation-date">22/4/2025</div>
+              </li>
+              <li class="evaluation-item">
+                <div class="evaluation-title">
+                  <i class="fas fa-file-alt"></i>
+                  <span>Les limites (Physique)</span>
+                </div>
+                <div class="evaluation-date">30/4/2025</div>
+              </li>
+            </ul>
+
+            <div class="action-buttons">
+              <button
+                onclick="document.location='cr-evaluation.html'"
+                class="action-button"
+              >
+                Create New Evaluation
+              </button>
+              <button
+                onclick="document.location='evaluation.html'"
+                class="action-button"
+              >
+                View All Evaluations
+              </button>
+            </div>
+          </div>
+
+          <div class="card" id="card2">
+            <h2 class="card-title">Last grades of students</h2>
+            <ul class="grades-list">
+              <li class="grade-item">
+                <div class="grade-student">
+                  <i class="fas fa-user-graduate"></i>
+                  <div>
+                    <div>Marwa Benbanoun</div>
+                    <div class="grade-subject">Physique/Chimie</div>
+                  </div>
+                </div>
+                <div class="grade-value">20/20</div>
+              </li>
+              <li class="grade-item">
+                <div class="grade-student">
+                  <i class="fas fa-user-graduate"></i>
+                  <div>
+                    <div>Marwa - Mécanique du point</div>
+                    <div class="grade-subject">Physique</div>
+                  </div>
+                </div>
+                <div class="grade-value">15.0/20</div>
+              </li>
+              <li class="grade-item">
+                <div class="grade-student">
+                  <i class="fas fa-user-graduate"></i>
+                  <div>
+                    <div>Eli - Mécanique du point</div>
+                    <div class="grade-subject">Physique</div>
+                  </div>
+                </div>
+                <div class="grade-value">16.0/20</div>
+              </li>
+              <li class="grade-item">
+                <div class="grade-student">
+                  <i class="fas fa-user-graduate"></i>
+                  <div>
+                    <div>Eli - Les limites</div>
+                    <div class="grade-subject">Physique</div>
+                  </div>
+                </div>
+                <div class="grade-value">0.0/20</div>
+              </li>
+            </ul>
+
+            <div class="action-buttons">
+              <button class="action-button">View All Grades</button>
+              <button class="action-button">Export Grades</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h2 class="card-title">Quick Actions</h2>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px">
+            <button class="action-button" style="height: 80px">
+              <i
+                class="fas fa-plus"
+                style="font-size: 18px; margin-bottom: 5px"
+              ></i>
+              <div>Create New Course</div>
+            </button>
+            <button class="action-button" style="height: 80px">
+              <i
+                class="fas fa-users"
+                style="font-size: 18px; margin-bottom: 5px"
+              ></i>
+              <div>Manage Students</div>
+            </button>
+            <button class="action-button" style="height: 80px">
+              <i
+                class="fas fa-tasks"
+                style="font-size: 18px; margin-bottom: 5px"
+              ></i>
+              <div>Create Assignment</div>
+            </button>
+            <button class="action-button" style="height: 80px">
+              <i
+                class="fas fa-chart-line"
+                style="font-size: 18px; margin-bottom: 5px"
+              ></i>
+              <div>View Analytics</div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="icons">
+        <a href="#" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="#" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+        <a href="#" aria-label="LinkedIn"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="#" aria-label="Instagram"
+          ><i class="fa-brands fa-square-instagram"></i
+        ></a>
+      </div>
+      <div class="copyright">
+        <p>
+          Designed and Developed by AE-YB-AB © 2025 <b>Dirassa+</b>. All Rights
+          Reserved.
+        </p>
+      </div>
+    </footer>
+    <script>
+      const user = document.getElementById("user");
+      const drop = document.getElementById("dropdown");
+
+      user.addEventListener("click", function () {
+        drop.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

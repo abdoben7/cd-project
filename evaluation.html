@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="evaluation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Dirassa - Evaluations List</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="logo">
+          <img src="./images/logo.png" />
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#">Dashboard</a>
+          </li>
+          <li><a href="#">Student space</a></li>
+          <li>
+            <a id="user">User</a>
+            <ul id="dropdown" class="drop-down hidden">
+              <li>
+                <i class="fa-solid fa-arrow-right-from-bracket out"></i
+                ><a href="#">log out</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="page-title">Evaluations List</h1>
+
+      <button
+        onclick="document.location='cr-evaluation.html'"
+        class="create-btn"
+      >
+        <i class="fas fa-plus"></i> Create Evaluation
+      </button>
+
+      <table class="evaluations-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Subject</th>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Period</th>
+            <th>Coefficient</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Title">Point Mechanics</td>
+            <td data-label="Subject">Physics</td>
+            <td data-label="Date">May 9, 2025</td>
+            <td data-label="Type">Oral</td>
+            <td data-label="Period">1st Trimester</td>
+            <td data-label="Coefficient">1.0</td>
+            <td class="action-icons" data-label="Actions">
+              <button class="view-btn" id="det">Details</button>
+              <button class="icon-btn edit-btn" ">
+                <i class="fas fa-edit"></i>
+              </button>
+              <button class="icon-btn delete-btn" >
+                <i class="fas fa-trash-alt"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Title">Mobility TD 1</td>
+            <td data-label="Subject">Physics</td>
+            <td data-label="Date">May 4, 2025</td>
+            <td data-label="Type">Assignment</td>
+            <td data-label="Period">1st Trimester</td>
+            <td data-label="Coefficient">1.0</td>
+            <td class="action-icons" data-label="Actions">
+              <button class="view-btn" id="det">Details</button>
+              <button class="icon-btn edit-btn" >
+                <i class="fas fa-edit"></i>
+              </button>
+              <button class="icon-btn delete-btn" >
+                <i class="fas fa-trash-alt"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Title">Point Mechanics</td>
+            <td data-label="Subject">Physics</td>
+            <td data-label="Date">May 2, 2025</td>
+            <td data-label="Type">Practical Work</td>
+            <td data-label="Period">1st Trimester</td>
+            <td data-label="Coefficient">1.0</td>
+            <td class="action-icons" data-label="Actions">
+              <button class="view-btn" id="det">Details</button>
+              <button class="icon-btn edit-btn" >
+                <i class="fas fa-edit"></i>
+              </button>
+              <button class="icon-btn delete-btn" >
+                <i class="fas fa-trash-alt"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Title">Limits</td>
+            <td data-label="Subject">Physics</td>
+            <td data-label="Date">May 2, 2025</td>
+            <td data-label="Type">Project</td>
+            <td data-label="Period">1st Trimester</td>
+            <td data-label="Coefficient">1.0</td>
+            <td class="action-icons" data-label="Actions">
+              <button class="view-btn" id="det">Details</button>
+              <button class="icon-btn edit-btn" >
+                <i class="fas fa-edit"></i>
+              </button>
+              <button class="icon-btn delete-btn" >
+                <i class="fas fa-trash-alt"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="icons">
+        <a href="#" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="#" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+        <a href="#" aria-label="LinkedIn"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="#" aria-label="Instagram"
+          ><i class="fa-brands fa-square-instagram"></i
+        ></a>
+      </div>
+      <div class="copyright">
+        <p>
+          Designed and Developed by AE-YB-AB © 2025 <b>Dirassa+</b>. All Rights
+          Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const user = document.getElementById("user");
+      const drop = document.getElementById("dropdown");
+
+      user.addEventListener("click", function () {
+        drop.classList.toggle("hidden");
+      });
+
+      const det= document.querySelector('#det');
+      det.addEventListener("click", function () {
+        document.location='details.html'
+      });
+
+    </script>
+  </body>
+</html>
